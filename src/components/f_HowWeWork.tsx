@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { ArrowBottomRightIcon } from "@radix-ui/react-icons";
 import { SectionHeading } from "./Comps/sectionHeading";
+import { HowWeWorkModal } from "./Comps/howWeWorkModal";
 
 export const HowWeWork = () => {
   return (
@@ -47,9 +48,8 @@ export const HowWeWork = () => {
           creativity, and unwavering commitment to excellence, we&apos;re here to
           help you bring your vision to life in stunning style.
         </p>
-        <Button variant={"outline"} className=" w-fit mt-8">
-          Learn more <ArrowBottomRightIcon />
-        </Button>
+       
+        <HowWeWorkModal/>
       </div>
     </div>
     </div>

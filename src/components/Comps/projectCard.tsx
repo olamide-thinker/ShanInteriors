@@ -4,9 +4,15 @@ import React from 'react'
 import { ProjectInfo } from './projectInfo'
 import { motion } from "framer-motion"
 
-export const ProjectCard = ({orientation}:{orientation:number}) => {
+
+
+export const ProjectCard = ({content, orientation}:{orientation:number, content:{ title: string, location: string,
+  description: string, imagesPath: string, imagesID: number[],}}) => {
+  
   const [hovering, setHovering] = React.useState(false)
   const [orient, setOrient] = React.useState(true)
+  const [imagePath, setImagePath] = React.useState('project1')
+
 
 React.useEffect(()=>{
   if (orientation % 2 === 1){
@@ -35,7 +41,7 @@ React.useEffect(()=>{
         <div className=' bg-black h-full w-full top-0 absolute -z-20'>
 
         <Image
-        src="/SampleImage.png"
+        src={`/projectImage/${content.imagesPath}/2.jpeg`}
         alt="HeroImage"
         width={1000}
         height={1000}
@@ -52,7 +58,7 @@ React.useEffect(()=>{
           whileTap={{ scale: 1.1 }}
  
         className='flex flex-col justify-center items-center absolute bottom-0 mb-16 w-full '>
-          <ProjectInfo/>
+          <ProjectInfo content={content}/>
         </motion.div>
         }
    

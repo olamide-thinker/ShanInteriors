@@ -19,13 +19,13 @@ export const MiniAbout = () => {
               className="w-[130px] h-[130px] object-cover"
             />
             <div className="space-y-2">
-              <h2>Our Director</h2>
-              <h2
+              <p>Our Director</p>
+              <h3
                 style={{ fontFamily: "Sacramento", fontSize: "38px" }}
                 className=" whitespace-nowrap"
               >
                 Micheal Shanu
-              </h2>
+              </h3>
               <div className=" flex gap-4">
                 <TfiLinkedin size={28} />
                 <AiFillInstagram size={32} />
