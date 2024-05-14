@@ -12,8 +12,8 @@ export const HowWeWork = () => {
     <div className="h-fit w-fit flex gap-4 px-4 md:px-16 flex-col sm:flex-row ">
       {/* left side  */}
       <div className=" w-full sm:w-[600px] max-w-[600px] h-full">
-        <div className="relative  w-full min-h-fit ">
-            <div  className="relative z-[10]">
+        <div className="relative  w-full min-h-fit overflow-hidden rounded-lg ">
+            <div  className="relative z-[10] border-4  overflow-hidden border-white rounded-lg">
 
           <svg
             viewBox="0 0 740 880"
@@ -24,11 +24,11 @@ export const HowWeWork = () => {
               fill-rule="evenodd"
               clip-rule="evenodd"
               d="M744 0H0V882H744V0ZM75.4429 17.4409C40.5391 14.7522 10.7554 42.3928 10.835 77.3999L12.4849 804.95C12.564 839.829 42.2637 867.29 77.042 864.641L677.869 818.874C709.148 816.491 733.312 790.417 733.312 759.047V123.671C733.312 92.3213 709.177 66.2559 677.92 63.8484L75.4429 17.4409Z"
-              className="fill-white w-full h-full z-[2]"
+              className="fill-white w-full h-full "
               />
           </svg>
               </div>
-          <div className=" bg-black h-full w-full top-0 absolute ">
+          <div className=" h-full w-full top-0 absolute ">
             <Image
               src="/SampleImage.png"
               alt="HeroImage"

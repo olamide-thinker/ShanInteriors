@@ -9,9 +9,9 @@ export const Footer = () => {
   return (
     <div className=' w-full flex items-center justify-center mb-4'>
     <div className='  w-[98%] rounded-[60px] bg-white p-8 m-4  '>
-        <div className=' flex w-full justify-between items-center p-8 border-b-2  border-black mb-1'>
+        <div className=' flex-wrap w-full justify-between items-center p-8 border-b-2  border-black mb-1'>
 <Image src={'/Shan interiors Logo.svg'} alt={'shan Interiors logo'} width={100} height={100}/>
-<ul className=' flex gap-4'>
+<ul className=' sm:flex hidden gap-4'>
     <li>Menu item</li>
     <li>Menu item</li>
     <li>Menu item</li>
@@ -21,7 +21,7 @@ export const Footer = () => {
         </div>
         <div className=' border-t-2 border-dotted border-black'>
 
-<div className=' flex w-full justify-between p-8'>
+<div className=' flex-wrap space-y-4 w-full justify-between p-8'>
 <div >
     <p>Phone: +234 XXX XXX XXXX   +234 XXX XXX XXXX</p>
     <p>Email: info@Shaninteriordesign.com</p>
@@ -42,7 +42,7 @@ export const Footer = () => {
     </Button>
 </div>
 </div>
-<div className=' flex justify-between w-full px-8'>
+<div className=' flex-wrap justify-between w-full px-8'>
     <p>Elevating Spaces, Realizing Visions</p>
     <p>©Shaninteriors Design - 2024</p>
 </div>

@@ -46,7 +46,7 @@ console.log(playing, experiences.length)
       <div className=' flex gap-2 p-2 flex-wrap items-center justify-center '>
       {experiences.map((exp)=>(
         <motion.div
-       className=' px-2 flex items-center rounded-sm bg-accent/15'
+       className= {`px-2 flex items-center rounded-sm bg-accent/15 ${currentPlaying[0].videoId === exp.videoId && 'border-2'}`}
  onClick={()=>{
   setPlaying(exp.item)
  }}
@@ -54,10 +54,10 @@ console.log(playing, experiences.length)
           <motion.p   transition={{duration: 1.3}} animate={{scale:[2, 1],}} className=' font-[luzia] font-bold sm:text-2xl whitespace-nowrap  cursor-pointer tracking-wide' 
            
           >{exp.name}</motion.p>
-          {currentPlaying[0].videoId === exp.videoId && <div className='flex items-center'>
+          {/* {currentPlaying[0].videoId === exp.videoId && <div className='flex items-center'>
               <PlayIcon/>
               <p className=' italic'>Playing...</p>
-          </div>  }
+          </div>  } */}
         
         </motion.div>
    ))}

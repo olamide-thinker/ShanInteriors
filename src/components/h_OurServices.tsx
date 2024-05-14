@@ -33,8 +33,9 @@ const services = [
 
 export const OurServices = () => {
   return (
-    <div>
+    <div className="w-full flex flex-col items-center">
       <SectionHeading headingText={"Our Services"} />
+      <div className=" max-w-[800px] sm:max-w-[1330px]">
       <p className=" px-16 mb-4">
         Our passion for creating beautiful and functional spaces that reflect
         the uniqueness of our clients sets us apart. Here&apos;s a glimpse of
@@ -44,7 +45,7 @@ export const OurServices = () => {
         {/* {Array.from({ length: 5 }).map((_, i) => ( */}
         {services.map((service, i) => (
           <div key={i}>
-            <div className="w-[350px] h-[400px] rounded-[30px] space-y-2 p-8 pt-4 text-center flex flex-col border place-items-center border-accent bg-white">
+            <div className="w-[300px] sm:w-[350px] h-[400px] rounded-[30px] space-y-2 p-8 pt-4 text-center flex flex-col border place-items-center border-accent bg-white">
               <Image
                 src={service.image}
                 alt={service.title}
@@ -57,6 +58,7 @@ export const OurServices = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

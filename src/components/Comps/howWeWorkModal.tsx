@@ -60,34 +60,35 @@ export const HowWeWorkModal = () => {
           Learn more <ArrowBottomRightIcon />
         </Button>
       </AlertDialogTrigger>
-      <AlertDialogContent className="min-w-[75vw] border-2 bg-white">
-        <AlertDialogCancel className=" absolute right-4 top-4  border-none w-fit rounded-full"> 
-
-<AiOutlineClose size={24} className=" text-black w-fit "/>
-        </AlertDialogCancel>
+      <AlertDialogContent className="sm:max-w-[85vw] max-w-[98vw] max-h-[99vh] sm:max-h-full  overflow-hidden p-0 border-2 bg-white">
+      {/* <AlertDialogContent className="min-w-[75vw] border-2 bg-white"> */}
+      <AlertDialogCancel className=" absolute sm:right-4 sm:top-4 right-1 top-1 z-40 border-none w-fit rounded-full"> 
+                    <AiOutlineClose size={24} className=" text-black w-fit "/>
+                </AlertDialogCancel>
         <Tabs defaultValue="Work" className="">
           <TabsList className="gap-4 border-b rounded-none py-8 w-full justify-start">
             <TabsTrigger
-              className=" text-[52px] font-[luzia] bg-none border-none p-0"
+              className="text-[24px] sm:text-[52px] font-[luzia] bg-none border-none p-0"
               value="Work"
             >
               How we work
             </TabsTrigger>
             /
             <TabsTrigger
-              className=" text-[52px] font-[luzia] bg-none border-none p-0"
+              className=" text-[24px] sm:text-[52px] font-[luzia] bg-none border-none p-0"
               value="TheTeam"
             >
               Meeting the team
             </TabsTrigger>
           </TabsList>
           <TabsContent value="Work">
-            <div className="flex ">
-              <div className="bg-[url('/floraPattern2.png')]  object-fill mix-blend-multiply w-3/6 flex items-center justify-center">
+          <ScrollArea className="h-[98vh] sm:h-full">
+            <div className="flex flex-col sm:flex-row h-full">
+              <div className="bg-[url('/floraPattern2.png')]  object-fill mix-blend-multiply sm:w-3/6 flex items-center justify-center">
                 <div className=" bg-white w-[300px] h-[300px] p-8 shadow-lg">At Shan Interiors, we believe in creating timeless, elegant interiors that reflect your style and enhance your lifestyle. Our collaborative approach, attention to detail, and commitment to excellence set us apart, making us your trusted partner in bringing your interior design dreams to life.</div>
               </div>
 
-              <ScrollArea className="max-h-[65vh] w-4/6 ">
+              <ScrollArea className="sm:max-h-[65vh] pb-16 sm:pb-2  sm:w-4/6 ">
               <div className=" p-8">
                 {howWeWork.map((info, index) => (
                   <div key={index} className="w-full p-4">
@@ -105,9 +106,16 @@ export const HowWeWorkModal = () => {
               </div>
                 </ScrollArea>
             </div>
+            </ScrollArea>
           </TabsContent>
+
+
+
+
+
+
           <TabsContent value="TheTeam">
-          <div className="max-w-[1100px]">
+          <div className="sm:max-w-[1100px] w-[95vw]">
             <div className=" p-4">
 
           <h3 className=" text-[32px] font-[luzia] font-bold">

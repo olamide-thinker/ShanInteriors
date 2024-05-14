@@ -16,7 +16,7 @@ import Image from "next/image";
 export default function Home() {
   console.log("abc");
   return (
-    <main className="flex min-h-screen max-w-screen flex-col gap-8 items-center ">
+    <main className="flex border overflow-hidden min-h-screen max-w-screen flex-col gap-8 items-center ">
       {/* Header area */}
       <div className=" w-full">
         <Header />

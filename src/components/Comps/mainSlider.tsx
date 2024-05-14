@@ -12,6 +12,7 @@ import {
   } from "@/components/ui/carousel";
 import { Button } from "../ui/button";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import { ScrollArea } from "../ui/scroll-area";
 
 // const Projectcontent = [
 //     { title: 'Four seasons hotel', 
@@ -37,15 +38,15 @@ const plugin = React.useRef(
 
   return (
 
-        <div className="flex w-[100%]  justify-between ">
-  <div className=" relative  h-full flex ">
+        <div className="flex w-full   flex-col sm:flex-row  justify-between ">
+  <div className="relative h-full flex">
   
       <Image 
       src={`/projectImage/${content.imagesPath}/${imageId}.jpeg`} 
       alt={""}
       width={1000}
       height={1000}
-      className="object-cover "
+      className="object-cover"
       />
    
 
@@ -65,13 +66,14 @@ const plugin = React.useRef(
   
   
   
-  
-  <div className="w-[450px] p-4 space-y-4">
-      <div>
+
+  <div className="w-[350px] sm:w-[450px]  sm:p-4 p-2 space-y-4">
+      
           <h2 className=" text-3xl border-b pb-2 my-4">{content.title}</h2>
+  <ScrollArea className=" w-full sm:h-full h-[65%] p-1 ">
           <p>{content.description}</p>
-      </div>
-      <div className=" flex flex-wrap  gap-4">
+    
+      <div className=" grid grid-cols-3 p-2 gap-4 mt-8">
           {content.imagesID.map((image:any, i:any)=>(
               <div key={i} className={`h-[100px] w-[100px] overflow-hidden rounded-lg ${imageId === image && "ring-4 ring-accent border-white border-2 shadow-lg"}`}
               onClick={()=> setImageId(image)}
@@ -86,6 +88,7 @@ const plugin = React.useRef(
               </div>
           ))}
       </div>
+  </ScrollArea>
   </div>
   
         </div>

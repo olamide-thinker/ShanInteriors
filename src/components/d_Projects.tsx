@@ -29,7 +29,7 @@ export const Projects = () => {
   
     <div className='w-full'>
       <SectionHeading headingText={'Our Projects'}/>
-      <div className=' mx-8 flex flex-wrap justify-center items-center gap-4 gap-y-16 grid-cols-3 '>
+      <div className=' mx-8 max-w-[600px] sm:max-w-[1330px] flex flex-wrap justify-center items-center gap-4 gap-y-16 grid-cols-3 '>
  {ProjectDetails.map((details, i)=>( 
       // {Array.from({ length: 5 }).map((_, i) => {
 
