@@ -20,6 +20,48 @@ const ProjectDetails = [
   imagesPath:'project2', 
   imagesID:[ 1,2,3,4,5,6] },
 
+  { title: 'Four seasons hotel', 
+  location: "Sharm El Sheikh", 
+  description: "Loremss ipsum dolor sit amet consectetur. Nascetur condimentum enim ac sociis tellus pulvinar mi id. Orci curabitur dolor a posuere. Vulputate in feugiat libero dui eu vel aliquet suscipit. ", 
+  imagesPath:'project2', 
+  imagesID:[ 1,2,3,4,5,6] },
+
+  { title: 'Four seasons hotel', 
+  location: "Sharm El Sheikh", 
+  description: "Loremss ipsum dolor sit amet consectetur. Nascetur condimentum enim ac sociis tellus pulvinar mi id. Orci curabitur dolor a posuere. Vulputate in feugiat libero dui eu vel aliquet suscipit. ", 
+  imagesPath:'project2', 
+  imagesID:[ 1,2,3,4,5,6] },
+
+  { title: 'Four seasons hotel', 
+  location: "Sharm El Sheikh", 
+  description: "Loremss ipsum dolor sit amet consectetur. Nascetur condimentum enim ac sociis tellus pulvinar mi id. Orci curabitur dolor a posuere. Vulputate in feugiat libero dui eu vel aliquet suscipit. ", 
+  imagesPath:'project2', 
+  imagesID:[ 1,2,3,4,5,6] },
+
+  { title: 'Four seasons hotel', 
+  location: "Sharm El Sheikh", 
+  description: "Loremss ipsum dolor sit amet consectetur. Nascetur condimentum enim ac sociis tellus pulvinar mi id. Orci curabitur dolor a posuere. Vulputate in feugiat libero dui eu vel aliquet suscipit. ", 
+  imagesPath:'project2', 
+  imagesID:[ 1,2,3,4,5,6] },
+
+  { title: 'Four seasons hotel', 
+  location: "Sharm El Sheikh", 
+  description: "Loremss ipsum dolor sit amet consectetur. Nascetur condimentum enim ac sociis tellus pulvinar mi id. Orci curabitur dolor a posuere. Vulputate in feugiat libero dui eu vel aliquet suscipit. ", 
+  imagesPath:'project2', 
+  imagesID:[ 1,2,3,4,5,6] },
+
+  { title: 'Four seasons hotel', 
+  location: "Sharm El Sheikh", 
+  description: "Loremss ipsum dolor sit amet consectetur. Nascetur condimentum enim ac sociis tellus pulvinar mi id. Orci curabitur dolor a posuere. Vulputate in feugiat libero dui eu vel aliquet suscipit. ", 
+  imagesPath:'project2', 
+  imagesID:[ 1,2,3,4,5,6] },
+
+  { title: 'Four seasons hotel', 
+  location: "Sharm El Sheikh", 
+  description: "Loremss ipsum dolor sit amet consectetur. Nascetur condimentum enim ac sociis tellus pulvinar mi id. Orci curabitur dolor a posuere. Vulputate in feugiat libero dui eu vel aliquet suscipit. ", 
+  imagesPath:'project2', 
+  imagesID:[ 1,2,3,4,5,6] },
+
 ];
 
 
@@ -29,7 +71,9 @@ export const Projects = () => {
   
     <div className='w-full'>
       <SectionHeading headingText={'Our Projects'}/>
-      <div className=' mx-8 max-w-[600px] sm:max-w-[1330px] flex flex-wrap justify-center items-center gap-4 gap-y-16 grid-cols-3 '>
+      <div className='justify-center flex'>
+
+      <div className=' mx-8 max-w-[600px] sm:max-w-[1330px] flex flex-wrap justify-between items-center gap-4 gap-y-16 grid-cols-3 '>
  {ProjectDetails.map((details, i)=>( 
       // {Array.from({ length: 5 }).map((_, i) => {
 
@@ -47,6 +91,7 @@ export const Projects = () => {
       // )})}
     ))}
       </div>
+    </div>
     </div>
 
   )

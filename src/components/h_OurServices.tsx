@@ -1,7 +1,11 @@
-import React from "react";
+"use client"
+import React,{ useRef }  from "react";
 import { SectionHeading } from "./Comps/sectionHeading";
 import Image from "next/image";
 import { ServiceCard } from "./Comps/serviceCard";
+import { motion,  useInView  } from "framer-motion";
+
+
 
 const services = [
     {
@@ -32,6 +36,13 @@ const services = [
 ]
 
 export const OurServices = () => {
+
+       
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+
+
+
   return (
     <div className="w-full flex flex-col items-center">
       <SectionHeading headingText={"Our Services"} />
@@ -41,23 +52,36 @@ export const OurServices = () => {
         the uniqueness of our clients sets us apart. Here&apos;s a glimpse of
         what we can do for you;
       </p>
-      <div className=" flex flex-wrap gap-8 justify-center">
+      <div className=" flex flex-wrap gap-2 justify-center overflow-hidden"
+      ref={ref}
+      >
         {/* {Array.from({ length: 5 }).map((_, i) => ( */}
-        {services.map((service, i) => (
-          <div key={i}>
-            <div className="w-[300px] sm:w-[350px] h-[400px] rounded-[30px] space-y-2 p-8 pt-4 text-center flex flex-col border place-items-center border-accent bg-white">
+        {services.map((service, i)=> {
+
+
+        return (
+          <motion.div key={i}
+          transition={{ duration: 2 }} 
+          style={{
+            transform: isInView ? "none" : `translateY(${800*i}px )`,
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+          }}
+          >
+            <motion.div className="w-[300px] hover:shadow-2xl shadow-accent sm:w-[250px] h-[500px] rounded-[30px] space-y-2 p-8 pt-4 text-center group flex flex-col border place-items-center border-accent bg-white hover:bg-accent/35 hover:border-black hover:border-2">
               <Image
                 src={service.image}
                 alt={service.title}
                 width={500}
                 height={500}
-                className="h-[200px] w-[200px]"
+                className="h-[200px] w-[200px] group-hover:w-[150px] group-hover:h-[150px] mix-blend-multiply"
               />
-              <h3 className=" text-2xl font-[luzia]">{service.title}</h3>
-              <p className=" text-sm"> { service.brief} </p>
-            </div>
-          </div>
-        ))}
+              <h3 className=" text-3xl font-[luzia]">{service.title}</h3>
+              <p className=" text-sm "> { service.brief} </p>
+            </motion.div>
+          </motion.div>
+        )}
+        )}
       </div>
       </div>
     </div>
