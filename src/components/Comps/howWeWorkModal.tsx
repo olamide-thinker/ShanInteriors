@@ -10,7 +10,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { ArrowBottomRightIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { ArrowBottomRightIcon, ArrowRightIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -56,8 +56,8 @@ export const HowWeWorkModal = () => {
   return (
     <AlertDialog>
       <AlertDialogTrigger>
-        <Button variant={"outline"} className=" w-fit mt-8 text-foreground">
-          Learn more <ArrowBottomRightIcon />
+        <Button variant={"secondary"} size={'lg'} className=" sm:w-fit w-full text-xl font-bold  mt-8 text-foreground border hover:gap-2">
+          Learn more <ArrowRightIcon />
         </Button>
       </AlertDialogTrigger>
       <AlertDialogContent className="sm:max-w-[85vw] max-w-[98vw] max-h-[99vh] sm:max-h-full  overflow-hidden p-0 border-2 bg-white">
@@ -82,13 +82,13 @@ export const HowWeWorkModal = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="Work">
-          <ScrollArea className="h-[98vh] sm:h-full">
+          <ScrollArea className="h-[98vh] sm:h-full w-full">
             <div className="flex flex-col sm:flex-row h-full">
               <div className="bg-[url('/floraPattern2.png')]  object-fill mix-blend-multiply sm:w-3/6 flex items-center justify-center">
                 <div className=" bg-white w-[300px] h-[300px] p-8 shadow-lg">At Shan Interiors, we believe in creating timeless, elegant interiors that reflect your style and enhance your lifestyle. Our collaborative approach, attention to detail, and commitment to excellence set us apart, making us your trusted partner in bringing your interior design dreams to life.</div>
               </div>
 
-              <ScrollArea className="sm:max-h-[65vh] pb-16 sm:pb-2  sm:w-4/6 ">
+              <ScrollArea className="sm:max-h-[65vh] pb-16 sm:pb-2   sm:w-full ">
               <div className=" p-8">
                 {howWeWork.map((info, index) => (
                   <div key={index} className="w-full p-4">
@@ -115,7 +115,7 @@ export const HowWeWorkModal = () => {
 
 
           <TabsContent value="TheTeam">
-          <div className="sm:max-w-[1100px] w-[95vw]">
+          <div className="max-w-[1100px] w-[95vw] sm:max-w-full">
             <div className=" p-4">
 
           <h3 className=" text-[32px] font-[luzia] font-bold">

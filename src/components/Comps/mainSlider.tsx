@@ -67,7 +67,7 @@ const plugin = React.useRef(
   
   
 
-  <div className="w-[350px] sm:w-[450px]  sm:p-4 p-2 space-y-4">
+  <div className="w-full sm:w-[450px]  sm:p-4 p-2 space-y-4">
       
           <h2 className=" text-3xl border-b pb-2 my-4">{content.title}</h2>
   <ScrollArea className=" w-full sm:h-full h-[65%] p-1 ">

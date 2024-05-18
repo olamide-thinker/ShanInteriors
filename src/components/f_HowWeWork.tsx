@@ -40,8 +40,8 @@ export const HowWeWork = () => {
         </div>
       </div>
       {/* right side */}
-      <div className=" w-full sm:w-[400px] p-8 pt-0  flex flex-col justify-center ">
-        <h2 className=" font-[luzia] font-bold text-[62px] leading-none">How we work</h2>
+      <div className=" w-full sm:w-[400px] p-8 pt-0  flex flex-col justify-center items-start ">
+        <h2 className=" font-[luzia] font-bold text-[62px] leading-none mb-4">How we work</h2>
         <p className="w-full">
           At Shan Interiors, we&apos;re passionate about creating spaces that
           inspire and delight. With our unique approach to design, unparalleled
