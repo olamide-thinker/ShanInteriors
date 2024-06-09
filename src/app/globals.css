@@ -1,4 +1,7 @@
-@tailwind base;
+  @import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap');
+  
+  
+  @tailwind base;
   @tailwind components;
   @tailwind utilities;
 
@@ -76,10 +79,17 @@
   }
 
   .masking {
-
-
 aspect-ratio: 1/1;
   }
+
+
+  body{
+    font-family: 'Podkova', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
 
 
   

@@ -13,6 +13,7 @@ import {
 import { Button } from "../ui/button";
 import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { ScrollArea } from "../ui/scroll-area";
+import { TfiLocationPin } from "react-icons/tfi";
 
 // const Projectcontent = [
 //     { title: 'Four seasons hotel', 
@@ -70,6 +71,7 @@ const plugin = React.useRef(
   <div className="w-full sm:w-[450px]  sm:p-4 p-2 space-y-4">
       
           <h2 className=" text-3xl border-b pb-2 my-4">{content.title}</h2>
+          <p className='flex gap-1 items-center bg-secondary p-1 w-fit rounded-lg pr-4'><TfiLocationPin/> Location</p>
   <ScrollArea className=" w-full sm:h-full h-[65%] p-1 ">
           <p>{content.description}</p>
     
