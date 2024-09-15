@@ -18,8 +18,10 @@ export default function Home() {
   return (
     <main className="flex border overflow-hidden min-h-screen max-w-screen flex-col gap-8 items-center ">
       {/* Header area */}
-      <div className=" w-full">
+      <div className=" w-full ">
+        <div className="fixed w-full z-50 bg-background/90 mb-8 backdrop-blur-">
         <Header />
+        </div>
         <Hero />
       </div>
 

@@ -8,22 +8,22 @@ import {
   MenubarSeparator,
   MenubarShortcut,
   MenubarTrigger,
-} from "@/components/ui/menubar"
+} from "./ui/menubar"
 
 
 
 const menuItem = [
-  {label:"Our Project", href:"/"},
-  {label:"How we work ", href:"/"},
-  {label:"Our services", href:"/"},
-  {label:"Contact us", href:"/"},
+  {label:"Our Project", href:"project"},
+  {label:"How we work ", href:"work"},
+  {label:"Our services", href:"service"},
+  {label:"Contact us", href:"contact"},
 ]
 
 
 
 export const Header = () => {
   return (
-    <div className=' w-full flex flex-col items-center justify-between'>
+    <div className=' w-full flex flex-col items-center justify-between  bg-card/50 '>
        
        {/* <div className='w-full flex flex-col items-center bg-foreground text-background p-2'>
         <p className=' text-sm leading-loose tracking-wider'>
@@ -40,7 +40,9 @@ export const Header = () => {
     
           <ul className='  gap-4 font-bold h-4 items-center text-[20px] hidden md:flex'>
             {menuItem.map((item, i)=>(
-            <li key={i} className=' border-accent hover:border-b-4 focus:border-b-accent'> {item.label} </li>
+            <a 
+            href={'#'+item.href}
+            key={i} className=' border-accent hover:border-b-4 focus:border-b-accent'> {item.label} </a>
             ))}
           </ul>
         

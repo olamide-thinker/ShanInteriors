@@ -6,7 +6,7 @@ import { ArrowBottomRightIcon, ArrowRightIcon } from '@radix-ui/react-icons'
 
 export const GetInTouch = () => {
   return (
-    <div className='w-full h-[500px] flex items-center justify-center'> 
+    <div id='contact' className='w-full h-[500px] flex items-center justify-center'> 
 
 <div className=' bg-card p-16  rounded-3xl max-w-[1400px] hover:shadow-2xl shadow-md hover:-mt-2'>
   <h2 className='font-[luzia] text-6xl font-bold'>Get in touch</h2>

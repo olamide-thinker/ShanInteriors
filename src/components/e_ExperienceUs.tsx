@@ -30,7 +30,7 @@ console.log(playing, experiences.length)
   
 
   return (
-    <div className=' w-full p-2 md:p-16 items-center flex flex-col justify-center' > 
+    <div id='project' className=' w-full p-2 md:p-16 items-center flex flex-col justify-center' > 
       {/* <div className='border w-[100%] h-[100%] rounded-[60px] bg-black flex items-end f '> */}
 {currentPlaying &&
   <VideoPlayer 

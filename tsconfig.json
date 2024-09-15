@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "es2015", // or "es6" or higher
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -17,11 +18,13 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["src/*"]
+      // "@/*": ["components/*", "pages/*", "lib/*", "utils/*"]
+    },
+
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "public/**/*.otf"],
-
   "exclude": ["node_modules"]
 }

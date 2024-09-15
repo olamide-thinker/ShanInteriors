@@ -22,30 +22,28 @@ export function ProjectForm() {
   
   return (
 <div className='flex flex-col items-center'>
-<BackButton/>
-<ScrollArea className='h-[73vh] border-black  w-[450px] py-8 p-4 '>
+{/* <BackButton/> */}
+<ScrollArea className=' border-black  w-[450px] py-8 p-4 '>
 
-    <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-8 h-full p-4'>
+    <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-2 h-full p-4'>
 
 
 <div>
 
-<p className='text-sm text-muted-foreground mx-1'>Project</p>
-<Separator className='bg-accent/50  mb-2'/>
-<div className=''>
+{/* <p className='text-sm text-muted-foreground mx-1'>Project</p> */}
+{/* <Separator className='bg-accent/50  mb-2'/> */}
+<div className=' flex flex-col items-center'>
 <InputSwitcher name={'title'} placeHolder={' Project Handsome'} multiLine className={'text-4xl font-bold'}/>
-<div className='flex gap-1 bg-secondary p-1 w-fit rounded-lg pr-4'>
+<InputSwitcher name={'location'} placeHolder={'Project location'} className={'text-sm'}/>
 
-<TfiLocationPin/><InputSwitcher name={'location'} placeHolder={'Project location'} className={'text-sm'}/>
-</div>
+  <InputSwitcher name={'description'} multiLine placeHolder={'Project description'} className={' text-md font-medium'}/>
 </div>
 </div>
 
 <div>
 
-<p className='text-sm text-muted-foreground mx-1'>Project description</p>
-<Separator className='bg-accent/50 mb-2'/>
-<InputSwitcher name={'description'} multiLine placeHolder={'Project description'} className={' text-md font-medium'}/>
+{/* <p className='text-sm text-muted-foreground mx-1'>Project description</p>
+<Separator className='bg-accent/50 mb-2'/> */}
 </div>
 
 {/* 

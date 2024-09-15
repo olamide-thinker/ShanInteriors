@@ -9,7 +9,7 @@ export const MiniAbout = () => {
   return (
     <div className=" max-w-[100%] bg-black/70 text-background p-0 border-none rounded-[10px] hidden sm:block">
       <div className=" flex flex-wrap md:flex-nowrap  gap-2 text-[20px] leading-tight py-0 w-full justify-center items-center">
-        <div className=" min-w-[430px] px-2 h-fit justify-center flex border-black/30 border-r-2 ">
+        {/* <div className=" min-w-[430px] px-2 h-fit justify-center flex border-black/30 border-r-2 ">
           <div className=" md:flex gap-4  py-0 bg-white/20 items-center pr-4 overflow-hidden rounded-md hidden ">
             <Image
               src={"/Michael_Shan.png"}
@@ -32,7 +32,7 @@ export const MiniAbout = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className=" flex  w-full m-4 ">
           <div className=" w-[250px] border-black/30 border-r-2  p-2 text-[16px]">

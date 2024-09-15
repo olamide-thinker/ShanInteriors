@@ -44,7 +44,7 @@ export const OurServices = () => {
 
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div id="service" className="w-full flex flex-col items-center">
       <SectionHeading headingText={"Our Services"} />
       <div className=" max-w-[800px] sm:max-w-[1330px]">
       <p className=" px-16 mb-4">
@@ -68,13 +68,13 @@ export const OurServices = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
           }}
           >
-            <motion.div className="w-[300px] hover:shadow-2xl shadow-accent sm:w-[250px] h-[500px] rounded-[30px] space-y-2 p-8 pt-4 text-center group flex flex-col border place-items-center border-accent bg-white hover:bg-accent/35 hover:border-black hover:border-2">
+            <motion.div className="w-[300px] transition-all duration-300 hover:shadow-2xl shadow-accent sm:w-[250px] h-[500px] rounded-[30px] space-y-2 p-8 pt-4 text-center group flex flex-col border place-items-center border-accent bg-white hover:bg-accent/35 hover:border-black hover:border-2">
               <Image
                 src={service.image}
                 alt={service.title}
                 width={500}
                 height={500}
-                className="h-[200px] w-[200px] group-hover:w-[150px] group-hover:h-[150px] mix-blend-multiply"
+                className="h-[200px] w-[200px] transition-all duration-300  group-hover:w-[150px] group-hover:h-[150px] mix-blend-multiply"
               />
               <h3 className=" text-3xl font-[luzia]">{service.title}</h3>
               <p className=" text-sm "> { service.brief} </p>

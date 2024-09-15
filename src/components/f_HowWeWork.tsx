@@ -7,7 +7,7 @@ import { HowWeWorkModal } from "./Comps/howWeWorkModal";
 
 export const HowWeWork = () => {
   return (
-    <div className="  bg-white pb-8 w-fit">
+    <div id="work" className="  bg-white pb-8 w-full">
          <SectionHeading headingText={'How we work'}/>
     <div className="h-fit w-fit flex gap-4 px-4 md:px-16 flex-col sm:flex-row ">
       {/* left side  */}
